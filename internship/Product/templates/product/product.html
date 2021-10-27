@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<style>
+
+    .product-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+</style>
+    <link rel="stylesheet" href="{% static 'CSS/post/show-post.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="product-container">
+
+    {% for post in posts %}
+    {% include 'product/components/card.html' %}
+    {% endfor %}
+</div>
+    
+    {% include 'components/paginator.html' %}
+    {% include 'product/components/product-form.html' %}
+
+
+
+{% endblock %}

@@ -1,0 +1,36 @@
+<style>
+    .add-product{
+        border: 2px solid rgba(0, 0, 0, 0.125);
+        border-radius: 10px;
+        background-color: azure;
+        padding: 1rem;
+    }
+    .add-product h3{
+        text-align: center;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+    }
+
+    .product-form .form-footer{
+        text-align: right;
+    }
+    .product-form p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 500px;
+        margin: 1rem auto;
+    }
+</style>
+
+{% if user.is_authenticated %}
+<div class="add-product container">
+    <h3>Add Product</h3>
+    <form method="post" action="/product/" id="product-form" class="product-form">
+        {% csrf_token %}
+        {{ product_form.as_p }}
+        <div class="form-footer">
+            <button type="submit" class="general-button" >Submit</button>
+        </div>
+    </form>
+</div>
+{% endif %}

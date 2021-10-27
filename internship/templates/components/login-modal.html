@@ -1,0 +1,57 @@
+
+<style>
+    /* adding some style to login modal */
+    .login-input {
+        display: block;
+        width: 90%;
+        max-width: 300px;
+        margin: 1rem;
+    }
+
+    #login-modal .modal-content {
+        max-width: 350px;
+    }
+</style>
+
+
+
+<div class="modal" tabindex="-1" id="login-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="/login/" method="POST" id="login-form">
+                <div class="modal-body">
+                    {% csrf_token %}
+                    <input class="login-input" type="text" name="username" id="login-username" placeholder="Username/Email">
+
+                    <input class="login-input" type="password" name="password" id="password" placeholder="Password">
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // adding toggle property to the login modal
+    var loginBtn = document.getElementById('login-btn');
+    loginBtn.addEventListener('click', () => {
+        loginModal = new bootstrap.Modal(document.getElementById('login-modal'), {
+            keyboard: false
+        })
+        loginModal.toggle()
+    })
+
+
+// setting login form path with next url 
+var loginForm = document.getElementById('login-form');
+loginForm.action = `/login/?next=${next}`;
+</script>

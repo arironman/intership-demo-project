@@ -1,0 +1,30 @@
+.post-user {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-form label {
+    display: none;
+}
+
+.post-form .post-form-field {
+    border: 2px solid rgba(0, 0, 0, .125);
+    background-color: rgba(0, 0, 0, .03);
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    outline: none;
+    height: 5rem;
+    padding: 10px;
+}
+
+.post-form .general-button {
+    float: right;
+    margin-right: 2rem;
+}
