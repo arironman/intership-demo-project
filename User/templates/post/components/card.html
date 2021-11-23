@@ -1,0 +1,18 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <h5>
+            {{post.user.get_full_name}} - 
+            
+            
+            <a class="post-user">
+                @{{post.user.username}}
+            </a>
+        </h5>
+        <span class="update-date">
+            {{post.updated_at}}
+        </span>
+    </div>
+    <div class="card-body">
+        {{post.text}}
+    </div>
+</div>

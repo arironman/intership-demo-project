@@ -1,0 +1,55 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12307
+"GET /static/CSS/nav.css HTTP/1.1" 200 206
+"GET /static/CSS/base.css HTTP/1.1" 200 512
+"GET /static/CSS/post/show-post.css HTTP/1.1" 200 535
+"GET /static/JS/jquery.min.js HTTP/1.1" 200 89476
+"GET /static/JS/base.js HTTP/1.1" 200 285
+"GET /static/JS/username-check.js HTTP/1.1" 200 1693
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3237
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1922
+"GET /static/admin/css/login.css HTTP/1.1" 200 1233
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+"GET /static/admin/css/base.css HTTP/1.1" 200 16378
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12318
+"GET /static/JS/jquery.min.js HTTP/1.1" 304 0
+"GET /static/CSS/nav.css HTTP/1.1" 304 0
+"GET /static/CSS/base.css HTTP/1.1" 304 0
+"GET /static/CSS/post/show-post.css HTTP/1.1" 304 0
+"GET /static/JS/base.js HTTP/1.1" 304 0
+"GET /static/JS/username-check.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3237
+"GET /product/ HTTP/1.1" 200 12616
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12318
+"GET /admin/ HTTP/1.1" 200 6146
+"GET /admin/ HTTP/1.1" 200 6146
+"GET /admin/Product/product/ HTTP/1.1" 200 7628
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/Product/product/5/change/ HTTP/1.1" 200 6143
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/Product/product/ HTTP/1.1" 200 7628
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/Product/product/2/change/ HTTP/1.1" 200 6154
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/ HTTP/1.1" 200 6146
+"GET /admin/User/post/ HTTP/1.1" 200 9669
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/User/post/11/change/ HTTP/1.1" 200 6345
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12307
+"GET /static/CSS/nav.css HTTP/1.1" 200 206
+"GET /static/CSS/post/show-post.css HTTP/1.1" 200 535
+"GET /static/CSS/base.css HTTP/1.1" 200 512
+"GET /static/JS/base.js HTTP/1.1" 200 285
+"GET /static/JS/username-check.js HTTP/1.1" 200 1693
+"GET /static/JS/jquery.min.js HTTP/1.1" 200 89476
